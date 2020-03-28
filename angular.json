@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "HugPool"
+  "defaultProject": "HugPool",
+  "cli": {
+    "analytics": false
+  }
 }
