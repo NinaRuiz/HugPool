@@ -16,7 +16,8 @@ export class RoomPageComponent implements OnInit {
   public load() {
     this.roomHttpService.get('hola').subscribe(
       (response: any) => {
-        console.log(response);
+        this.kisses = response.kisses;
+        this.hugs = response.hugs;
       }
     );
   }
