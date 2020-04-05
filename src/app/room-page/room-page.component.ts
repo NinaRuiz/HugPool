@@ -9,8 +9,10 @@ import {HttpClient} from '@angular/common/http';
 export class RoomPageComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
+  public load() {
 
-  ngOnInit(): void {
   }
-
-}
+  ngOnInit(): void {
+    this.load();
+  }
+}d
