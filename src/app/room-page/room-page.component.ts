@@ -7,7 +7,8 @@ import {RoomHttpService} from '../services/room-http.service';
   styleUrls: ['./room-page.component.css']
 })
 export class RoomPageComponent implements OnInit {
-
+  public kisses = 0;
+  public hugs = 0;
   constructor(private roomHttpService: RoomHttpService) { }
   ngOnInit(): void {
     this.load();
@@ -19,4 +20,5 @@ export class RoomPageComponent implements OnInit {
       }
     );
   }
+
 }
