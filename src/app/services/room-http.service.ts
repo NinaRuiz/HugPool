@@ -7,5 +7,8 @@ import {HttpClient} from '@angular/common/http';
 export class RoomHttpService {
 
   constructor(private httpClient: HttpClient) { }
+  public get(id: string) {
+    return this.httpClient.get('/assets/api/room.json');
+  }
 }
 
