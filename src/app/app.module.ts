@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatInputModule} from '@angular/material/input';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: MainPageComponent},
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
       appRoutes
     ), BrowserAnimationsModule, MatCardModule, MatButtonModule, MatToolbarModule, MatInputModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

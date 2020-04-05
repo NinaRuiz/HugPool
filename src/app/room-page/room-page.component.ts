@@ -9,10 +9,14 @@ import {RoomHttpService} from '../services/room-http.service';
 export class RoomPageComponent implements OnInit {
 
   constructor(private roomHttpService: RoomHttpService) { }
-  public load() {
-
-  }
   ngOnInit(): void {
     this.load();
+  }
+  public load() {
+    this.roomHttpService.get('hola').subscribe(
+      (response: any) => {
+        console.log(response);
+      }
+    );
   }
 }
