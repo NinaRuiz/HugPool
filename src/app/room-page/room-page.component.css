@@ -7,3 +7,16 @@
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
+img{
+  display: block;
+  margin: auto;
+  padding-top: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+mat-card-actions{
+  text-align: center;
+  vertical-align: middle;
+}
