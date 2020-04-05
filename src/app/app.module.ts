@@ -26,9 +26,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule, RouterModule.forRoot(
       appRoutes
-    ), BrowserAnimationsModule, MatCardModule, MatButtonModule, MatToolbarModule, MatInputModule
+    ), BrowserAnimationsModule, MatCardModule, MatButtonModule, MatToolbarModule, MatInputModule, HttpClientModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
