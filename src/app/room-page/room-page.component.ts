@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {RoomHttpService} from '../services/room-http.service';
 
 @Component({
   selector: 'app-room-page',
@@ -8,11 +8,11 @@ import {HttpClient} from '@angular/common/http';
 })
 export class RoomPageComponent implements OnInit {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private roomHttpService: RoomHttpService) { }
   public load() {
 
   }
   ngOnInit(): void {
     this.load();
   }
-}d
+}
