@@ -8,7 +8,7 @@ export class RoomHttpService {
 
   constructor(private httpClient: HttpClient) { }
   public get(id: string) {
-    return this.httpClient.get('http://localhost:3000/room/5555%27');
+    return this.httpClient.get('http://localhost:3000/room/'+ id);
   }
 }
 
