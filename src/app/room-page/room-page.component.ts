@@ -18,6 +18,7 @@ export class RoomPageComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.id = params.get('id');
+      this.load();
     });
   }
   public load = () => {
