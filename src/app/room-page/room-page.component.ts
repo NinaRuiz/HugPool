@@ -15,17 +15,17 @@ export class RoomPageComponent implements OnInit {
   constructor(private roomHttpService: RoomHttpService, private route: ActivatedRoute) {
   }
 
-ngOnInit(): void {
-  this.route.paramMap.subscribe(params => {
-    this.id = params.get('id');
-    /*
-    this.roomHttpService.get('hola').subscribe(
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.id = params.get('id');
+    });
+  }
+  public load = () => {
+    this.roomHttpService.get(this.id).subscribe(
       (response: any) => {
         this.kisses = response.kisses;
         this.hugs = response.hugs;
         this.id = response.id;
       });
-     */
-  });
-}
+  }
 }
